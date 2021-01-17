@@ -49,3 +49,10 @@ if (full_page.length != 0) {
   full_page[0].style.background = "transparent";
 }
 /*结束*/
+
+/**博客背景渐变开始**/
+#web_bg {
+	background-color: #FFDEE9;
+	background-image: linear-gradient(225deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+/*结束*/
