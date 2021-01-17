@@ -1,0 +1,51 @@
+/*页脚透明*/
+#footer{
+	background: rgba(255,255,255,0);
+}
+
+/**
+* 鼠标样式开始
+*/
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+        default;
+}
+a,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+        default;
+}
+/*鼠标样式结束*/
+
+/*阅读模式字体与背景开始*/
+.read-mode{
+    /* 字体大小 */
+    font-size:17px;
+    /* 可以在这里引入自定义字体，具体方法请自行百度css引入字体 */
+}
+
+/*阅读模式字体与背景结束*/
+/*分类卡片隐藏开始*/
+#aside_content
+.card-archives
+ul.card-archive-list
+> .card-archive-list-item
+a
+span:first-child,
+#aside_content
+.card-categories
+ul.card-category-list
+> .card-category-list-item
+a
+span:first-child {
+    width: auto;
+    min-width: 50%;
+}
+/*分类卡片隐藏结束*/
+
+/**掉banner图开始*/
+var full_page = document.getElementsByClassName("full_page");
+if (full_page.length != 0) {
+  full_page[0].style.background = "transparent";
+}
+/*结束*/
